@@ -83,6 +83,9 @@ https://github.com/scala/collection-strawman/issues/100
 https://github.com/scala/collection-strawman/issues/246
 https://contributors.scala-lang.org/t/can-we-get-rid-of-cooperative-equality/1131/17
 
+## Equivalence vs Equality
+https://github.com/TomasMikula/hasheq/blob/master/Equivalence-Equality.md
+
 ### Hashcode
 ```scala
 scala> val p = new java.lang.Float(1)
