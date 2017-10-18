@@ -38,6 +38,12 @@ a.compare(a) // 0
 9007199254740992L == 9007199254740992.0 // true
 9007199254740992.0 == 9007199254740993L //true
 9007199254740992L == 9007199254740993L // false
+
+123456789.toFloat // 1.23456792E8
+123456789.toFloat == 123456789 // true
+123456789 == 123456789.toFloat // true
+123456788 == 123456789.toFloat // false
+123456790 == 123456789.toFloat // true
 ```
 
 ### IEEE 754
@@ -68,3 +74,27 @@ null.asInstanceOf[Int] == 0 // true
 ### Relation to `eq` and `equals`
 
 ### Relation to `.type`
+
+### Multiversal equality
+https://github.com/lampepfl/dotty/issues/1247
+https://github.com/scala/collection-strawman/issues/100
+
+### Cooperative equality
+https://github.com/scala/collection-strawman/issues/246
+https://contributors.scala-lang.org/t/can-we-get-rid-of-cooperative-equality/1131/17
+
+### Hashcode
+```scala
+scala> val p = new java.lang.Float(1)
+p: Float = 1.0
+
+scala> p.hashCode
+res0: Int = 1065353216
+
+scala> p.##
+res1: Int = 1
+```
+
+### BUGS, there are plenty
+Mistreatment of equality leads to numerous issues.
+https://github.com/scalaz/scalaz/issues/1138, https://github.com/scalaz/scalaz/issues/1156, https://issues.scala-lang.org/browse/SI-2574, http://www.scala-lang.org/old/node/4254, https://github.com/scala/bug/issues/6492, https://github.com/scala/bug/issues/6331, https://github.com/scala/bug/issues/9671, https://github.com/scala/bug/issues/8998, https://github.com/scala/bug/issues/10511, https://github.com/typelevel/cats/issues/1909, https://github.com/typelevel/cats/issues/123, https://github.com/typelevel/algebra/issues/137, https://github.com/typelevel/cats/issues/1359, https://twitter.com/copumpkin/status/694662182873632772, https://github.com/typelevel/cats/issues/855, https://github.com/circe/circe/issues/187, https://github.com/typelevel/cats/issues/589, https://github.com/typelevel/cats/issues/1710, https://github.com/typelevel/cats/pull/1712, 
