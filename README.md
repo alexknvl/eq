@@ -51,6 +51,7 @@ https://codewords.recurse.com/issues/one/when-is-equality-transitive-and-other-f
 https://github.com/rust-lang/rust/issues/10320
 https://internals.rust-lang.org/t/avoiding-partialord-problems-by-introducing-fast-finite-floating-point-types/5376/12
 https://www.reddit.com/r/haskell/comments/wbsd3/for_float_not_referentially_transparent/
+https://en.wikipedia.org/wiki/Partial_equivalence_relation
 
 ### Types
 
@@ -83,7 +84,13 @@ http://data.tmorris.net/talks/parametricity/4985cb8e6d8d9a24e32d98204526c8e3b931
 [Extensionality](https://en.wikipedia.org/wiki/Extensionality)
 https://www.reddit.com/r/haskell/comments/360mir/comparing_functions_for_equality/
 
-### Identity
+### Identity & Congruence & Substitutability
+https://ncatlab.org/nlab/show/principle+of+equivalence
+https://stackoverflow.com/questions/1692863/what-is-the-difference-between-identity-and-equality-in-oop
+https://www.reddit.com/r/haskell/comments/1njlqr/laws_for_the_eq_class/
+
+#### Quotient types
+https://en.wikipedia.org/wiki/Quotient_type
 
 ### Treatment of `null`
 ```scala
@@ -93,6 +100,7 @@ null.asInstanceOf[Int] == 0 // true
 ```
 
 ### Relation to `eq` and `equals`
+https://www.reddit.com/r/haskell/comments/4ivvge/why_no_reference_equality/d31ppeh/
 
 ### Relation to `.type`
 
