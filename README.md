@@ -80,6 +80,8 @@ http://data.tmorris.net/talks/parametricity/4985cb8e6d8d9a24e32d98204526c8e3b931
 * ~~classOf/.getClass~~
 * General recursion
 
+#### Relation to referential transparency
+
 ### Extensionality
 [Extensionality](https://en.wikipedia.org/wiki/Extensionality)
 https://www.reddit.com/r/haskell/comments/360mir/comparing_functions_for_equality/
@@ -132,7 +134,7 @@ res1: Int = 1
 
 ### BUGS, there are plenty
 Mistreatment of equality leads to numerous issues.
-https://github.com/scalaz/scalaz/issues/1138, https://github.com/scalaz/scalaz/issues/1156, https://issues.scala-lang.org/browse/SI-2574, http://www.scala-lang.org/old/node/4254, https://github.com/scala/bug/issues/6492, https://github.com/scala/bug/issues/6331, https://github.com/scala/bug/issues/9671, https://github.com/scala/bug/issues/8998, https://github.com/scala/bug/issues/10511, https://github.com/typelevel/cats/issues/1909, https://github.com/typelevel/cats/issues/123, https://github.com/typelevel/algebra/issues/137, https://github.com/typelevel/cats/issues/1359, https://twitter.com/copumpkin/status/694662182873632772, https://github.com/typelevel/cats/issues/855, https://github.com/circe/circe/issues/187, https://github.com/typelevel/cats/issues/589, https://github.com/typelevel/cats/issues/1710, https://github.com/typelevel/cats/pull/1712, https://github.com/typelevel/cats/issues/1831
+https://github.com/scalaz/scalaz/issues/1138, https://github.com/scalaz/scalaz/issues/1156, https://issues.scala-lang.org/browse/SI-2574, http://www.scala-lang.org/old/node/4254, https://github.com/scala/bug/issues/6492, https://github.com/scala/bug/issues/6331, https://github.com/scala/bug/issues/9671, https://github.com/scala/bug/issues/8998, https://github.com/scala/bug/issues/10511, https://github.com/typelevel/cats/issues/1909, https://github.com/typelevel/cats/issues/123, https://github.com/typelevel/algebra/issues/137, https://github.com/typelevel/cats/issues/1359, https://twitter.com/copumpkin/status/694662182873632772, https://github.com/typelevel/cats/issues/855, https://github.com/circe/circe/issues/187, https://github.com/typelevel/cats/issues/589, https://github.com/typelevel/cats/issues/1710, https://github.com/typelevel/cats/pull/1712, https://github.com/typelevel/cats/issues/1831, https://github.com/typelevel/cats/pull/1964, https://github.com/typelevel/cats/issues/1959, https://github.com/typelevel/cats/issues/1966, 
 
 ## Solutions
 https://github.com/alexknvl/leibniz/blob/master/src/main/scala/leibniz/Eq.scala is broken ATM
